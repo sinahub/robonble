@@ -1,5 +1,3 @@
-import { logStd } from '../utils/logger.js';
-
 const DIRECTIONS = ['NORTH', 'EAST', 'SOUTH', 'WEST'];
 const NUM_OF_DIRECTIONS = DIRECTIONS.length;
 
@@ -99,7 +97,6 @@ export default class Robot {
   report() {
     if (this.hasBeenPlaced) {
       const output = `${this.x},${this.y},${DIRECTIONS[this.face]}`;
-      logStd(output);
       return output;
     }
   }
