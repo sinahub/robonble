@@ -54,13 +54,19 @@ The application is runnale and testable with Node, Yarn and in a Docker containe
 1. Get the URL once the code execution finished. 
 
 
+# Architecture Diagrams
+
+The image below shows how the node application is put into a container for deployment on EC2 Elastic Container Service.
+
+![Load Balancer ECS](./services/robonble/public/images/loadBalancer-containers.png)
+
 The diagram below shows the architecture of the resources.
 
 ![Reference architecture of the ECS Stack](./services/robonble/public/images/template1-designer.png)
 
 
 
-## Instruction
+# Instruction
 The correct commands and their format are as below.
 ```
 PLACE X,Y,F 
