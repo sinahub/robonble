@@ -1,5 +1,3 @@
-aws cloudformation deploy --template-file infrastructure/ecs.yml --region ap-southeast-2 --stack-name final --capabilities CAPABILITY_NAMED_IAM
+aws cloudformation deploy --template-file infrastructure/ecs.yml --region ap-southeast-2 --stack-name new --capabilities CAPABILITY_NAMED_IAM
 
-./deploy.sh ap-southeast-2 final
-
-./s.sh ap-southeast-2 final
+./deploy.sh ap-southeast-2 new
