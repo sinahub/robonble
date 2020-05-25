@@ -54,6 +54,11 @@ The application is runnale and testable with Node, Yarn and in a Docker containe
 1. Get the URL once the code execution finished. 
 
 
+The diagram below shows the architecture of the resources.
+
+![Reference architecture of the ECS Stack](./services/robonble/public/images/template1-designer.png)
+
+
 
 ## Instruction
 The correct commands and their format are as below.
