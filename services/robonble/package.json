@@ -1,0 +1,33 @@
+{
+  "name": "robot-move-on-table",
+  "version": "1.1.0",
+  "description": "The application is a simulation of a robot moving on a square table top, of dimensions 5 units x 5 units. There are no other obstructions on the table surface. The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "mocha --require @babel/register tests/**/*.spec.js"
+  },
+  "repository": "https://github.com/cowardcalf/robot-move-on-table.git",
+  "author": "Yang Liu <cowardcalf@gmail.com> <yangliu0485@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chalk": "^2.4.2",
+    "express": "^4.17.1",
+    "inquirer": "^6.2.1",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "sinon": "^7.2.3"
+  }
+}
