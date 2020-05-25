@@ -1,0 +1,54 @@
+PLACE 2,2,NORTH MOVE REPORT LEFT REPORT RIGHT REPORT REPORT REPORT MOVE REPORT LEFT REPORT RIGHT REPORT
+
+
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:ap-southeast-2:090665335129:repository/hello-repository",
+        "registryId": "090665335129",
+        "repositoryName": "hello-repository",
+        "repositoryUri": "090665335129.dkr.ecr.ap-southeast-2.amazonaws.com/hello-repository",
+        "createdAt": "2020-05-18T11:29:34+10:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        }
+    }
+}
+
+
+
+docker tag hello-world 090665335129.dkr.ecr.ap-southeast-2.amazonaws.com/hello-repository
+
+aws ecr get-login-password | docker login --username AWS --password-stdin 090665335129.dkr.ecr.ap-southeast-2.amazonaws.com
+
+
+git config user.name "sinahub"
+git config user.email "sina.fereshteh33@gmail.com"
+
+docker build -t robobale .
+docker run -t -i -p 3000:80 robobale
+
+aws ecr get-login --no-include-email --region ap-southeast-2
+
+090665335129.dkr.ecr.ap-southeast-2.amazonaws.com/roboble
+
+aws ecr get-login --no-include-email --region ap-southeast-2
+
+docker login -u AWS -p eyJwYXlsb2FkIjoiZk1KeXArU0s0amtEY2JBOHBuanVyb1BEUm41WGVFcXhpMGdhU0JPR0Z6TURMcDdRNE55OGhKbUFKZ3ZTYktCVWxEblhxa1V1Y0VHVTJvR3IyMk9MYjZrMVZHS3R6dnhXVFUrdHlKTjdpUFVFTVZ1cHBybnJZNHBvTUI2Q3krMDBYM1lySzhiaENaUkNibkRrUkpVOWNtUVJzMDB5Z2UxcFZiVkE4MFBnRk5GelZReFNzN2M1VHlWQTFCM3k3bVJoUHFSdTBLOVl1dzZZZUNxdW94S2xPbjZ3RjNheU9PNEtLNkJSRnpmSmZDblVUeUtUZXVCZzB0bk5FNDlETFpnUkFWeXRtU1pWbGZwZklQNGJZR1hka2JOcTc0UzdralFUekxHZDlNaU5lalR5bVA1Sm1yU3N3dHVEbWlrb0ttMjd2UHFhMUlzUzc4R09yUlo5R0VoSC9Ic29GVno0Y3JmZDJ0TU9MWXo5ZE9hMmhNSUpMZG9oOEE0MXkzMGtucDE5bFdScnZSeFc2QlhDeXoxTnkzLzNiMlZZSHhnSjZTelJMOUZ1ZnMxblQ0Y2cxN2l6M21TUThnSzVwRUhHMjdqTlZqYjB1WHBBSk9pazQ0K1UwakRDR2x3a2pOUkVHSWppR3UvV0dJL1BhMG5GQ3lzVmRZRll1VGEzeW93dXZpS3RLUFRxQTE0RlNsM1kxd3lVbnV6T2hPWmhqSWtvSVBjeENCR1A2dituclF2bndEVzE1SlNBRzdteW45dnhGOVZPbUgrSWpSd094ZWg2TUw1R0EzY3FtODMySDZVUkM1K2pZUEpBSFJpYWVOVG9wdy9JM2hBdXdta0tvRzRKSTNXZVpKcUJ2MkJQVWFxMnF5UC93K1hQSEtQQjgyMUVnQ3g3TjlLc01Jd0V2bmZzYWFlT2hDNldObkF0NmxnbXE0eG8wcFczZVhQUkJUMnBTSThyVTFXRmZGK1E0QVhIMEdxMTIyUXlQR3p6NjQyNlpNL1MrOVRJSWZ1SkVjbEVUdHdjYTlzOGdyOHRpN1JwUjI4M2VJTmxsTUdIdHRzOHpZVEcyMmpMS01hMmdhVXBqMUJhYTMrQkd3WlRzUytjTUdKdVMvenFNSGNjbldwK3U0WnNvMElKN0VzQTdpcG11RDMrVFhVL0VzZnNxWGRtWnN5RytFMVRKd2RiMmwvTk1KNlBnbFJZd0FxdWg1UC9STHNuMHZGdmE5Qk1Hc01ERGdxOUtnODJ3MitoR3YyVURaUE1LOGJMNW5CdWJhM21DaHhtWWtCYTlkTWVORmNZbFF3TkU0MjE2dTFIR3RzaTZVSzhUSGlINDJDWHVwZlY3WFd5N1dZK3psUTB6dy8wc0x2TFpLK0FMMkpwTDN4RHNhODNTV0haKzRrMnhaSytMbU11QzhxWGM4UG14M3ZnNE5TS2tUWVhHWW9XOFZrVTdJT3VMQWw1aXJUYWdaUE8yZmdubHJpM1VHMXg1MktRNXJSYmlNSUdrelE0UEJlcklrMTdHR3BUWlZiOTVOcEVYcndOdU9OTXlhZWhndz09IiwiZGF0YWtleSI6IkFRRUJBSGhMeWp6N1BKRVBtWWJxSDZBNmYvd1dOenl6NUJLYTM3Qm5CUHNBeXVGMUtRQUFBSDR3ZkFZSktvWklodmNOQVFjR29HOHdiUUlCQURCb0Jna3Foa2lHOXcwQkJ3RXdIZ1lKWUlaSUFXVURCQUV1TUJFRURQaHFOWlpiRzA5OWo5QmNkQUlCRUlBN2VKMVRrNWlYd0FNanFrQVBJenpCOHBZaG9zWXlBOUVGcis1Zlpjc3B4dWVGbGprNVpuV0RhT0NxWlJOUllhQ1ZLVmVWV2xpZjVzeTJ0Rlk9IiwidmVyc2lvbiI6IjIiLCJ0eXBlIjoiREFUQV9LRVkiLCJleHBpcmF0aW9uIjoxNTg5ODIxNTc1fQ== https://090665335129.dkr.ecr.ap-southeast-2.amazonaws.com
+
+
+docker tag robobale:latest 090665335129.dkr.ecr.ap-southeast-2.amazonaws.com/robobale:v1 
+
+docker push 090665335129.dkr.ecr.ap-southeast-2.amazonaws.com/robobale:v1
+
+090665335129.dkr.ecr.ap-southeast-2.amazonaws.com/robobale:v1
+
+aws cloudformation deploy \
+	--template-file infrastructure/ecs.yml \
+	--region ap-southeast-2 \
+	--stack-name robobaleV3 \
+	--capabilities CAPABILITY_NAMED_IAM
+	
+	
+	
+sudo chmod a+x deploy.sh
