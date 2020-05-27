@@ -2,7 +2,7 @@
 ## Application
 The application is a simulation of a toy robot moving on a square table top, of dimensions 5 units x 5 units. There are no other obstructions on the table surface. The robot is free to roam around the surface of the table, but must be prevented from falling. Any movement that would result in the robot falling from the table must be prevented, however further valid movement commands must still be allowed.
 
-This project is froked from this [Project](https://github.com/cowardcalf/robot-move-on-table.git).
+This project is forked from this [Project](https://github.com/cowardcalf/robot-move-on-table.git).
 
 # Setup and Run
 The application is runnale and testable with Node, Yarn and in a Docker container. First clone the code the [Repository](https://github.com/sinahub/robonble.git)
